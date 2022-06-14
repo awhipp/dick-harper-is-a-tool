@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Dicker Harper is a Tool</title>
+</head>
+ 
+<body>
+    <center>
+        <h1 style="color:green;">Dicker Harper is a Tool</h1>
+ 
+        <h3><span id="date"></span> days since Globodyne tanked.</h3>
+ 
+        <video controls autoplay loop>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+            </video>
+    </center>
+</body>
+ 
+
+<script type = "text/javascript" >
+    // JavaScript program to illustrate 
+    // calculation of no. of days between two date 
+  
+    // To set two dates to two variables
+    var since_globodyne = new Date("12/01/2000");
+    var today = new Date();
+    
+    // To calculate the time difference of two dates
+    var Difference_In_Time = today.getTime() - since_globodyne.getTime();
+    
+    // To calculate the no. of days between two dates
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    
+    //To display the final no. of days (result)
+    document.getElementById("date").textContent = parseInt(Difference_In_Days);
+  
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0599578547621989"
+     crossorigin="anonymous"></script>
+     
+</html>
