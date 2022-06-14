@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="bulma.min.css" />
+    <link rel="stylesheet" href="./styles/bulma.min.css" />
     <style type="text/css">
         html,
         body {
@@ -84,85 +84,14 @@
     </section>
 
     <script type = "text/javascript" >  
-        setInterval(() => {
-            // To calculate the time difference of two dates
-            var time = new Date().getTime() - new Date("12/01/2000").getTime();
-            
-            // To calculate the no. of days between two dates
-            var days = time / (1000 * 3600 * 24);
-            
-            //To display the final no. of days (result)
-            document.getElementById("date").textContent = days.toFixed(5);
-        }, 100);
-      
-        var alreadySet = false;
-
-        function set() {
-            alreadySet = true;
-            document.getElementById("iframe").setAttribute("src", "https://www.youtube.com/embed/GF5AjJd6O5U?version=3&autoplay=1&list=PLxUCeVeZhl2fCFMxMlU0T2w40PlWXG4EW&loop=1&showinfo=0&controls=0");
-        }        
-
-        window.addEventListener("click", function(event) {
-            if ( !alreadySet )
-                set();
-                document.getElementById("rainbow").style.display = 'block';
-
-        });
     </script>
     
     <style>
-        .main { max-width: 800px; text-align: center; margin: 0 auto; }
-        .video-container { position: relative;  padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
-        .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
-        .hero-foot { background: rgba(255, 255, 255, 0.6) } 
-        span { text-decoration: underline; font-weight: bolder; }
-        button { background-color: #008CBA; }
-        h1 { color: #336699; font-weight: bold; font-size: 2em; background: rgba(255, 255, 255, 0.6); padding: 0.5em; }
-        h3 { color: black; font-weight: bold; font-size: 1.5em; margin-bottom: 2em; background: rgba(255, 255, 255, 0.6); padding: 0.5em; }
-
-        #rainbow {
-            display: none; 
-
-            height: 100%;
-            width: 100%;
-            left:0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-            background-size: 1800% 1800%;
-            z-index: -1;
-
-            -webkit-animation: rainbow 6s ease infinite;
-            -z-animation: rainbow 6s ease infinite;
-            -o-animation: rainbow 6s ease infinite;
-            animation: rainbow 6s ease infinite;
-        }
-
-        @-webkit-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
-        }
-        @-moz-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
-        }
-        @-o-keyframes rainbow {
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
-        }
-        @keyframes rainbow { 
-            0%{background-position:0% 82%}
-            50%{background-position:100% 19%}
-            100%{background-position:0% 82%}
-        }
     </style>
     
+    <script async src="./javascript/script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0599578547621989" crossorigin="anonymous"></script>
+    <link href="./styles/styles.css" rel="stylesheet">
 </body>
 
 </html>
