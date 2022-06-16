@@ -10,4 +10,4 @@ span { text-decoration: underline; font-weight: bolder; }
 button { background-color: #008CBA; }
 h1 { color: #336699; font-weight: bold; font-size: 2em; background: rgba(255, 255, 255, 1); padding: 0.5em; }
 h3 { color: black; font-weight: bold; font-size: 1.5em; margin-bottom: 2em; background: rgba(255, 255, 255, 1); padding: 0.5em; }
-.adblock { max-width: 800px; margin: 0 auto; }
+.adblock { max-width: 1000px; margin: 0 auto; }
